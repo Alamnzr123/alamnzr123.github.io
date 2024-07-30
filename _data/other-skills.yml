@@ -1,0 +1,15 @@
+- name: Figma
+  percentage: 60
+  color: info
+
+- name: Docker
+  percentage: 30
+  color: success
+
+- name: Microservices
+  percentage: 40
+  color: danger
+
+- name: Teaching
+  percentage: 90
+  color: success
