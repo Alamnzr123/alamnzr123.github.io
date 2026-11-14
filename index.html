@@ -3,15 +3,26 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rahmad Alamsyah Nazaruddin — Odoo & Full-Stack Developer</title>
-  <meta name="description" content="Odoo Developer (Odoo 19 Enterprise) and Full-Stack Developer from Medan, Indonesia. I turn business processes into working software — ERP modules, web applications and the workflows that connect them." />
-  <meta property="og:title" content="Rahmad Alamsyah Nazaruddin — Odoo & Full-Stack Developer" />
-  <meta property="og:description" content="I turn business processes into working software — ERP modules, web applications and the workflows that connect them." />
+  <title>Rahmad Alamsyah Nazaruddin | Odoo &amp; Full-Stack Developer</title>
+  <meta name="description" content="Odoo Developer (Odoo 19 Enterprise) and Full-Stack Developer from Medan, Indonesia. I turn business processes into working software: ERP modules, web applications and the workflows that connect them." />
+  <meta property="og:title" content="Rahmad Alamsyah Nazaruddin | Odoo &amp; Full-Stack Developer" />
+  <meta property="og:description" content="I turn business processes into working software: ERP modules, web applications and the workflows that connect them." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://alamnzr123.github.io/" />
   <meta property="og:image" content="https://alamnzr123.github.io/assets/img/og-image.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="theme-color" content="#14101B" />
+  <meta name="theme-color" content="#14101b" />
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (t === 'light' || t === 'dark') d.setAttribute('data-theme', t);
+      var light = t ? t === 'light' : window.matchMedia('(prefers-color-scheme: light)').matches;
+      if (light) d.classList.add('is-light');
+    })();
+  </script>
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,60 +34,54 @@
 
   <header class="nav" id="nav">
     <div class="nav__inner container">
-      <a class="brand" href="#top" aria-label="Back to top"><span class="brand__mark">RA</span><span class="brand__name">Rahmad Alamsyah</span></a>
+      <a class="brand" href="#top" aria-label="Rahmad Alamsyah, back to top"><span class="brand__mark" aria-hidden="true">RA</span><span class="brand__name">Rahmad Alamsyah</span></a>
       <nav class="nav__links" id="navLinks" aria-label="Main">
         <a href="#work">Work</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
-        <a class="btn btn--small btn--primary" href="assets/docs/CV_Rahmad_Alamsyah_Nazaruddin.pdf" target="_blank" rel="noopener"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> CV</a>
+        <a class="btn btn--small btn--primary" href="assets/docs/CV_Rahmad_Alamsyah_Nazaruddin.pdf" target="_blank" rel="noopener"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> CV<span class="sr-only"> (PDF, opens in a new tab)</span></a>
       </nav>
-      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+      <div class="nav__tools">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme">
+          <svg class="ic ic--sun" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>
+          <svg class="ic ic--moon" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        <button class="nav__toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+      </div>
     </div>
   </header>
 
   <main id="main">
     <!-- HERO -->
     <section class="hero" id="top">
-      <canvas class="hero__canvas" id="flowCanvas" aria-hidden="true"></canvas>
-      <div class="hero__glow hero__glow--a" aria-hidden="true"></div>
-      <div class="hero__glow hero__glow--b" aria-hidden="true"></div>
       <div class="container hero__grid">
         <div class="hero__text">
-          <p class="status"><span class="status__dot"></span>Open to remote roles · Medan, Indonesia (GMT+7)</p>
-          <h1 class="hero__name" aria-label="Rahmad Alamsyah Nazaruddin"><span class="split">Rahmad Alamsyah</span><br /><span class="split">Nazaruddin</span></h1>
-          <p class="hero__role" aria-live="polite"><span class="typed" id="typed">Odoo Developer — Odoo 19 Enterprise</span><span class="caret" aria-hidden="true"></span></p>
-          <p class="hero__lead">I turn business processes into working software — ERP modules, web applications, and the workflows that connect them.</p>
+          <h1 class="hero__name">Rahmad Alamsyah<br />Nazaruddin</h1>
+          <p class="hero__role"><span class="nowrap">Odoo Developer (Odoo 19 Enterprise)</span> and <span class="nowrap">Full-Stack Developer</span></p>
+          <p class="hero__lead">I turn business processes into working software: ERP modules, web applications, and the workflows that connect them.</p>
+          <ol class="flowline" aria-label="The lifecycle I build in Odoo, from lead to closing">
+            <li>Lead</li><li>Feasibility</li><li>Contract</li><li>Sales order</li><li>Project</li><li>Closing</li>
+          </ol>
           <div class="hero__cta">
-            <a class="btn btn--primary magnetic" href="#work">See my work <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg></a>
+            <a class="btn btn--primary" href="#work">See the Odoo case study <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg></a>
+            <a class="btn btn--ghost" href="assets/docs/CV_Rahmad_Alamsyah_Nazaruddin.pdf" target="_blank" rel="noopener">Download CV<span class="sr-only"> (PDF, opens in a new tab)</span></a>
           </div>
+          <p class="avail">Open to remote roles · based in Medan, Indonesia (GMT+7)</p>
         </div>
         <div class="hero__visual">
-          <div class="orbit" aria-hidden="true">
-            <div class="orbit__ring"></div>
-            <div class="orbit__track">
-              <span class="orbit__chip" style="--i:0">Odoo 19</span>
-              <span class="orbit__chip" style="--i:1">Python</span>
-              <span class="orbit__chip" style="--i:2">React</span>
-              <span class="orbit__chip" style="--i:3">Next.js</span>
-              <span class="orbit__chip" style="--i:4">Node.js</span>
-              <span class="orbit__chip" style="--i:5">PostgreSQL</span>
-              <span class="orbit__chip" style="--i:6">Docker</span>
-            </div>
-          </div>
-          <div class="avatar"><img src="assets/img/profile.jpg" alt="Portrait of Rahmad Alamsyah Nazaruddin" width="800" height="800" /></div>
+          <div class="avatar"><img src="assets/img/profile.jpg" alt="Portrait of Rahmad Alamsyah Nazaruddin" width="800" height="800" fetchpriority="high" /></div>
         </div>
       </div>
-      <a class="scroll-hint" href="#stats" aria-label="Scroll down"><span></span></a>
     </section>
 
-    <!-- STATS -->
-    <section class="stats" id="stats">
+    <!-- FACTS -->
+    <section class="stats" aria-label="At a glance">
       <div class="container stats__grid">
-        <div class="stat reveal"><p class="stat__num"><span class="count" data-to="4">0</span>+</p><p class="stat__label">years in software development and technical training</p></div>
-        <div class="stat reveal"><p class="stat__num"><span class="count" data-to="20">0</span>+</p><p class="stat__label">business processes across two custom Odoo 19 modules</p></div>
-        <div class="stat reveal"><p class="stat__num"><span class="count" data-to="500">0</span>+</p><p class="stat__label">staff supported across branches as System Engineer</p></div>
-        <div class="stat reveal"><p class="stat__num"><span class="count" data-to="50">0</span>+</p><p class="stat__label">bootcamp students mentored at Telkom Indonesia</p></div>
+        <div class="stat"><p class="stat__num">4+</p><p class="stat__label">years in software development and technical training</p></div>
+        <div class="stat"><p class="stat__num">20+</p><p class="stat__label">business processes across two custom Odoo 19 modules</p></div>
+        <div class="stat"><p class="stat__num">500+</p><p class="stat__label">staff supported across branches as System Engineer</p></div>
+        <div class="stat"><p class="stat__num">50+</p><p class="stat__label">bootcamp students mentored at Telkom Indonesia</p></div>
       </div>
     </section>
 
@@ -85,7 +90,7 @@
       <div class="container">
         <p class="kicker reveal">Featured case study · Odoo 19 Enterprise</p>
         <h2 class="h2 reveal">From first lead to project closing in one ERP</h2>
-        <p class="sub reveal">Odoo Developer at an Odoo Implementation Partner (Thailand, remote) · Jul – Oct 2026. A group company ran acquisition and project work largely outside its systems. I built two custom modules that moved the whole lifecycle into Odoo, turning 170+ pages of SOPs into working workflows.</p>
+        <p class="sub reveal">Odoo Developer at an Odoo Implementation Partner (Thailand, remote) · Jul to Oct 2026. A group company ran acquisition and project work largely outside its systems. I built two custom modules that moved the whole lifecycle into Odoo, turning 170+ pages of SOPs into working workflows.</p>
 
         <div class="pipeline" id="pipeline">
           <div class="lane">
@@ -98,9 +103,9 @@
               <li class="step step--handover">Handover</li>
             </ol>
           </div>
-          <div class="handover" aria-hidden="true">
-            <span class="ho ho--v1"></span><span class="ho ho--h"></span><span class="ho ho--v2"></span>
-            <span class="handover__label">handover creates the sales order and project</span>
+          <div class="handover">
+            <span class="ho ho--v1" aria-hidden="true"></span><span class="ho ho--h" aria-hidden="true"></span><span class="ho ho--v2" aria-hidden="true"></span>
+            <span class="handover__label">Handover creates the sales order and project</span>
           </div>
           <div class="lane lane--2">
             <p class="lane__label">Module 2 · Project Implementation <em>(on Project, Sales, Inventory, Purchase)</em></p>
@@ -115,14 +120,14 @@
         </div>
 
         <div class="features">
-          <article class="feature card spot reveal"><span class="icon"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span><h3>Approval workflows</h3><p>Draft → Pending Approval → Approved / Rejected, with full audit trail in the chatter.</p></article>
-          <article class="feature card spot reveal"><span class="icon"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline></svg></span><h3>Master-data requests</h3><p>Create, edit and deactivate requests for prospects, customers and pricelists.</p></article>
-          <article class="feature card spot reveal"><span class="icon"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></span><h3>CRM activity rules</h3><p>Configurable rules that auto-schedule meetings and calls per pipeline stage.</p></article>
-          <article class="feature card spot reveal"><span class="icon"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg></span><h3>Feasibility &amp; handover</h3><p>Wizards for feasibility studies, MoU/MoA and contracts, then handover to delivery.</p></article>
-          <article class="feature card spot reveal"><span class="icon"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg></span><h3>Project costing</h3><p>Timesheets, purchase requests from tasks, and budget-vs-actual monitoring.</p></article>
-          <article class="feature card spot reveal"><span class="icon"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg></span><h3>Project closing</h3><p>A closing wizard that checks open PRs, expenses and invoices before close.</p></article>
+          <article class="feature reveal"><h3>Approval workflows</h3><p>Draft, Pending Approval, then Approved or Rejected, with a full audit trail in the chatter.</p></article>
+          <article class="feature reveal"><h3>Master-data requests</h3><p>Create, edit and deactivate requests for prospects, customers and pricelists.</p></article>
+          <article class="feature reveal"><h3>CRM activity rules</h3><p>Configurable rules that auto-schedule meetings and calls per pipeline stage.</p></article>
+          <article class="feature reveal"><h3>Feasibility &amp; handover</h3><p>Wizards for feasibility studies, MoU/MoA and contracts, then handover to delivery.</p></article>
+          <article class="feature reveal"><h3>Project costing</h3><p>Timesheets, purchase requests from tasks, and budget-vs-actual monitoring.</p></article>
+          <article class="feature reveal"><h3>Project closing</h3><p>A closing wizard that checks open PRs, expenses and invoices before close.</p></article>
         </div>
-        <p class="note reveal">Stack: Odoo 19 Enterprise · Python ORM · XML views · PostgreSQL · Multi-company. Client name withheld — happy to walk through the modules in an interview.</p>
+        <p class="note reveal">Stack: Odoo 19 Enterprise · Python ORM · XML views · PostgreSQL · Multi-company. Client name withheld; happy to walk through the modules in an interview.</p>
       </div>
     </section>
 
@@ -137,7 +142,7 @@
           <article class="tl reveal">
             <span class="tl__dot"></span>
             <div class="tl__card card">
-              <p class="tl__date">Jul 2026 – Oct 2026 · Remote</p>
+              <p class="tl__date">Jul 2026 to Oct 2026 · Remote</p>
               <h3>Odoo Developer <span>· Odoo Implementation Partner, Thailand</span></h3>
               <ul><li>Built two custom Odoo 19 Enterprise modules covering 20+ business processes</li><li>Multi-step approval workflows, CRM extensions and project costing</li><li>Worked with the Tech Lead on module architecture</li></ul>
               <div class="chips"><span>Odoo 19</span><span>Python</span><span>PostgreSQL</span><span>XML</span></div>
@@ -147,7 +152,7 @@
           <article class="tl reveal">
             <span class="tl__dot"></span>
             <div class="tl__card card">
-              <p class="tl__date">Dec 2025 – Jun 2026 · Vientiane, Laos</p>
+              <p class="tl__date">Dec 2025 to Jun 2026 · Vientiane, Laos</p>
               <h3>Business Analyst &amp; System Engineer <span>· Lao Asean Leasing Public Company</span></h3>
               <ul><li>Rebuilt daily sales reporting so the COO could check accurate same-day figures</li><li>Presented sales performance to the CEO; mapped sales and operations processes</li><li>L1/L2 support for 500+ staff across branches and head office</li></ul>
               <div class="chips"><span>Business analysis</span><span>Reporting</span><span>Windows Server</span><span>Networking</span></div>
@@ -158,13 +163,13 @@
             <span class="tl__dot"></span>
             <div class="tl__card card tl__card--media">
               <div>
-                <p class="tl__date">Jun 2025 – Sep 2025 · Remote (USA)</p>
+                <p class="tl__date">Jun 2025 to Sep 2025 · Remote (USA)</p>
                 <h3>Full-Stack Developer <span>· My Secure Advantage</span></h3>
                 <ul><li>Dashboards for coaches and members on a US financial-wellness platform</li><li>Features involving an AI live-chat platform and payment-gateway integration</li><li>Shipped through CI/CD with every app running in Docker</li></ul>
                 <div class="chips"><span>Next.js</span><span>Node.js</span><span>Docker</span><span>AWS</span></div>
-                <a class="link" href="https://www.mysecureadvantage.com/" target="_blank" rel="noopener">mysecureadvantage.com <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                <a class="link" href="https://www.mysecureadvantage.com/" target="_blank" rel="noopener">mysecureadvantage.com <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg><span class="sr-only"> (opens in a new tab)</span></a>
               </div>
-              <img src="assets/img/msa.jpg" alt="My Secure Advantage website" loading="lazy" />
+              <img src="assets/img/msa.jpg" alt="My Secure Advantage website" width="1200" height="619" loading="lazy" />
             </div>
           </article>
 
@@ -172,13 +177,13 @@
             <span class="tl__dot"></span>
             <div class="tl__card card tl__card--media">
               <div>
-                <p class="tl__date">Aug 2024 – Jun 2025 · Medan</p>
+                <p class="tl__date">Aug 2024 to Jun 2025 · Medan</p>
                 <h3>Full-Stack Developer <span>· PT Mega Bintang Mas Indonesia</span></h3>
                 <ul><li>Product-catalog sites for hundreds of CCTV and networking products</li><li>A trusted online presence for two subsidiaries</li><li>Led development from requirements to release; RESTful microservices</li></ul>
                 <div class="chips"><span>React</span><span>Node.js</span><span>REST APIs</span></div>
-                <a class="link" href="https://makmurabadisenantiasa.com/" target="_blank" rel="noopener">makmurabadisenantiasa.com <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                <a class="link" href="https://makmurabadisenantiasa.com/" target="_blank" rel="noopener">makmurabadisenantiasa.com <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg><span class="sr-only"> (opens in a new tab)</span></a>
               </div>
-              <img src="assets/img/mas.jpg" alt="Product catalog website for a Mega Bintang Mas subsidiary" loading="lazy" />
+              <img src="assets/img/mas.jpg" alt="Product catalog website for a Mega Bintang Mas subsidiary" width="1200" height="626" loading="lazy" />
             </div>
           </article>
 
@@ -186,22 +191,22 @@
             <span class="tl__dot"></span>
             <div class="tl__card card tl__card--media">
               <div>
-                <p class="tl__date">Mar 2022 – Dec 2023 · Jakarta (hybrid)</p>
+                <p class="tl__date">Mar 2022 to Dec 2023 · Jakarta (hybrid)</p>
                 <h3>Technical Trainer &amp; Full-Stack Developer <span>· Telkom Indonesia</span></h3>
-                <ul><li>Designed a full-stack web &amp; mobile curriculum; mentored 50+ students to deployment</li><li>Built features for the Pijar Sekolah learning platform (May – Jul 2022)</li><li>Built Mama Recipe as a reference full-stack teaching app</li></ul>
+                <ul><li>Designed a full-stack web &amp; mobile curriculum; mentored 50+ students to deployment</li><li>Built features for the Pijar Sekolah learning platform (May to Jul 2022)</li><li>Built Mama Recipe as a reference full-stack teaching app</li></ul>
                 <div class="chips"><span>React</span><span>React Native</span><span>Node.js</span><span>Scrum</span></div>
-                <a class="link" href="https://slicing-foodtemplate.vercel.app/" target="_blank" rel="noopener">Mama Recipe live <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                <a class="link" href="https://slicing-foodtemplate.vercel.app/" target="_blank" rel="noopener">Mama Recipe live <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg><span class="sr-only"> (opens in a new tab)</span></a>
               </div>
-              <img src="assets/img/pijar.jpg" alt="Pijar Sekolah learning platform" loading="lazy" />
+              <img src="assets/img/pijar.jpg" alt="Pijar Sekolah learning platform" width="1200" height="618" loading="lazy" />
             </div>
           </article>
 
           <article class="tl reveal">
             <span class="tl__dot"></span>
             <div class="tl__card card">
-              <p class="tl__date">2021 – 2023</p>
+              <p class="tl__date">2021 to 2023</p>
               <h3>Earlier</h3>
-              <ul><li><b>Coding Educator</b>, BrightChamps — named "Best Teacher", 100+ teaching hours a month</li><li><b>Trainer</b>, Empire Code Education Centre, Singapore (remote)</li><li><b>Product Manager</b>, JK Toast — launched the business on GoFood, GrabFood and ShopeeFood</li></ul>
+              <ul><li><b>Coding Educator</b>, BrightChamps: named "Best Teacher", 100+ teaching hours a month</li><li><b>Trainer</b>, Empire Code Education Centre, Singapore (remote)</li><li><b>Product Manager</b>, JK Toast: launched the business on GoFood, GrabFood and ShopeeFood</li></ul>
             </div>
           </article>
         </div>
@@ -214,41 +219,41 @@
         <p class="kicker reveal">Selected projects</p>
         <h2 class="h2 reveal">Side projects &amp; technical builds</h2>
         <div class="projects">
-          <a class="project card spot reveal" href="https://github.com/Alamnzr123/match-job-ai" target="_blank" rel="noopener">
-            <span class="icon"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></span><h3>CV-to-job matcher</h3>
+          <a class="project card reveal" href="https://github.com/Alamnzr123/match-job-ai" target="_blank" rel="noopener">
+            <h3>CV-to-job matcher</h3>
             <p>Scores an uploaded CV against a job description with a rule-based AI workflow and async evaluation.</p>
-            <div class="chips"><span>Next.js</span><span>Pinecone</span><span>AI</span></div><span class="project__go">View repository <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></span>
+            <div class="chips"><span>Next.js</span><span>Pinecone</span><span>AI</span></div><span class="project__go">View repository <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg><span class="sr-only"> (opens in a new tab)</span></span>
           </a>
-          <a class="project card spot reveal" href="https://github.com/Alamnzr123/demo-heypico-backend-app" target="_blank" rel="noopener">
-            <span class="icon"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></span><h3>AI local business search</h3>
+          <a class="project card reveal" href="https://github.com/Alamnzr123/demo-heypico-backend-app" target="_blank" rel="noopener">
+            <h3>AI local business search</h3>
             <p>Natural-language search for local businesses, with results on an interactive map.</p>
-            <div class="chips"><span>Next.js</span><span>AI</span><span>Maps</span></div><span class="project__go">View repository <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></span>
+            <div class="chips"><span>Next.js</span><span>AI</span><span>Maps</span></div><span class="project__go">View repository <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg><span class="sr-only"> (opens in a new tab)</span></span>
           </a>
-          <a class="project card spot reveal project--wide" href="https://github.com/Alamnzr123/fleet-management-oilpalm-enhance" target="_blank" rel="noopener">
+          <a class="project card reveal project--wide" href="https://github.com/Alamnzr123/fleet-management-oilpalm-enhance" target="_blank" rel="noopener">
             <div class="project__body">
-              <span class="icon"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg></span><h3>Fleet management system</h3>
+              <h3>Fleet management system</h3>
               <p>Vehicles, drivers, mills and trip scheduling for fresh-fruit-bunch transport in palm-oil operations.</p>
-              <div class="chips"><span>React</span><span>TypeScript</span></div><span class="project__go">View repository <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></span>
+              <div class="chips"><span>React</span><span>TypeScript</span></div><span class="project__go">View repository <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg><span class="sr-only"> (opens in a new tab)</span></span>
             </div>
-            <img src="assets/img/fleet.jpg" alt="Fleet management dashboard" loading="lazy" />
+            <img src="assets/img/fleet.jpg" alt="Fleet management dashboard" width="1200" height="629" loading="lazy" />
           </a>
-          <a class="project card spot reveal" href="https://github.com/Alamnzr123/Zimosi-App" target="_blank" rel="noopener">
-            <span class="icon"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg></span><h3>Task management API</h3>
+          <a class="project card reveal" href="https://github.com/Alamnzr123/Zimosi-App" target="_blank" rel="noopener">
+            <h3>Task management API</h3>
             <p>Production-style backend for tasks, history, comments, notifications and background jobs.</p>
-            <div class="chips"><span>TypeScript</span><span>Express</span><span>Docker</span></div><span class="project__go">View repository <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></span>
+            <div class="chips"><span>TypeScript</span><span>Express</span><span>Docker</span></div><span class="project__go">View repository <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg><span class="sr-only"> (opens in a new tab)</span></span>
           </a>
-          <a class="project card spot reveal" href="https://github.com/Alamnzr123/secure-payment-next" target="_blank" rel="noopener">
-            <span class="icon"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg></span><h3>Accounts-receivable app</h3>
+          <a class="project card reveal" href="https://github.com/Alamnzr123/secure-payment-next" target="_blank" rel="noopener">
+            <h3>Accounts-receivable app</h3>
             <p>Accounts-receivable management web app built with the Next.js app router.</p>
-            <div class="chips"><span>Next.js</span><span>TypeScript</span></div><span class="project__go">View repository <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></span>
+            <div class="chips"><span>Next.js</span><span>TypeScript</span></div><span class="project__go">View repository <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg><span class="sr-only"> (opens in a new tab)</span></span>
           </a>
-          <a class="project card spot reveal" href="https://github.com/Alamnzr123/lightweight-scraper-next" target="_blank" rel="noopener">
-            <span class="icon"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></span><h3>Lightweight web scraper</h3>
+          <a class="project card reveal" href="https://github.com/Alamnzr123/lightweight-scraper-next" target="_blank" rel="noopener">
+            <h3>Lightweight web scraper</h3>
             <p>An API route using Playwright that extracts a page's title, meta description and first H1.</p>
-            <div class="chips"><span>Next.js</span><span>Playwright</span></div><span class="project__go">View repository <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></span>
+            <div class="chips"><span>Next.js</span><span>Playwright</span></div><span class="project__go">View repository <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg><span class="sr-only"> (opens in a new tab)</span></span>
           </a>
-          <div class="project card project--soon project--wide-soon reveal">
-            <span class="icon"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></span><h3>Open-source Odoo 19 module</h3>
+          <div class="project project--soon reveal">
+            <h3>Open-source Odoo 19 module</h3>
             <p>An approval-workflow module with OWL components, QWeb reports and tests. In progress.</p>
             <div class="chips"><span>Odoo 19</span><span>Python</span><span>OWL</span></div><span class="project__go">Coming soon</span>
           </div>
@@ -256,14 +261,18 @@
       </div>
     </section>
 
-    <!-- SKILLS MARQUEE -->
-    <section class="marquee-wrap" aria-label="Tech stack">
-      <div class="marquee"><div class="marquee__row">
-        <span>Odoo 19 Enterprise</span><span>Python ORM</span><span>QWeb</span><span>PostgreSQL</span><span>Node.js</span><span>Express</span><span>REST APIs</span><span>Microservices</span><span>Odoo 19 Enterprise</span><span>Python ORM</span><span>QWeb</span><span>PostgreSQL</span><span>Node.js</span><span>Express</span><span>REST APIs</span><span>Microservices</span>
-      </div></div>
-      <div class="marquee marquee--rev"><div class="marquee__row">
-        <span>React</span><span>Next.js</span><span>TypeScript</span><span>Tailwind CSS</span><span>Docker</span><span>AWS</span><span>CI/CD</span><span>Git</span><span>Jira</span><span>React</span><span>Next.js</span><span>TypeScript</span><span>Tailwind CSS</span><span>Docker</span><span>AWS</span><span>CI/CD</span><span>Git</span><span>Jira</span>
-      </div></div>
+    <!-- STACK -->
+    <section class="section section--alt section--tight" id="stack">
+      <div class="container">
+        <p class="kicker reveal">Stack</p>
+        <h2 class="h2 reveal">Tools I work with</h2>
+        <dl class="stack">
+          <div class="stack__row reveal"><dt>Odoo</dt><dd>Odoo 19 Enterprise · custom modules (Python ORM, XML views, QWeb) · approval workflows · CRM, Sales, Project, Inventory, Purchase, Accounting · multi-company</dd></div>
+          <div class="stack__row reveal"><dt>Backend</dt><dd>Python · Node.js · Express · REST APIs · microservices · PostgreSQL · MySQL</dd></div>
+          <div class="stack__row reveal"><dt>Frontend</dt><dd>JavaScript · TypeScript · React · Next.js · React Native · Tailwind CSS</dd></div>
+          <div class="stack__row reveal"><dt>Cloud &amp; tools</dt><dd>AWS · Docker · CI/CD · Git · Firebase · Jira · Agile/Scrum</dd></div>
+        </dl>
+      </div>
     </section>
 
     <!-- RECOGNITION -->
@@ -275,12 +284,12 @@
           <p class="sub reveal">Before working professionally, I was building apps for competitions and teaching others to build theirs.</p>
         </div>
         <ul class="awards">
-          <li class="reveal"><span class="icon"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg></span><span>Winner, IDCamp 2020 Developer Challenge (Dicoding) — <em>Funding With Food</em></span></li>
-          <li class="reveal"><span class="icon"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg></span><span>1st Place, Mobile Application Design &amp; Concept (2020)</span></li>
-          <li class="reveal"><span class="icon"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg></span><span>3rd Place, IT FEST KI Mobile App Development (2020)</span></li>
-          <li class="reveal"><span class="icon"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></span><span>"Best Teacher", BrightChamps — 100+ teaching hours a month</span></li>
-          <li class="reveal"><span class="icon"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg></span><span>IDCamp Coding Scholarship (2024)</span></li>
-          <li class="reveal"><span class="icon"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg></span><span>Career Essentials in Software Development — Microsoft &amp; LinkedIn</span></li>
+          <li class="reveal"><span class="awards__year">2020</span><span>Winner, IDCamp 2020 Developer Challenge (Dicoding): <em>Funding With Food</em></span></li>
+          <li class="reveal"><span class="awards__year">2020</span><span>1st Place, Mobile Application Design &amp; Concept</span></li>
+          <li class="reveal"><span class="awards__year">2020</span><span>3rd Place, IT FEST KI Mobile App Development</span></li>
+          <li class="reveal"><span class="awards__year">2022–23</span><span>"Best Teacher", BrightChamps, with 100+ teaching hours a month</span></li>
+          <li class="reveal"><span class="awards__year">2024</span><span>IDCamp Coding Scholarship</span></li>
+          <li class="reveal"><span class="awards__year">Cert.</span><span>Career Essentials in Software Development, Microsoft &amp; LinkedIn</span></li>
         </ul>
       </div>
     </section>
@@ -289,14 +298,15 @@
     <section class="contact" id="contact">
       <div class="container contact__inner">
         <p class="kicker reveal">Contact</p>
-        <h2 class="contact__title reveal">Let's build something<br /><span class="grad">that runs your business.</span></h2>
-        <p class="sub reveal">Open to Odoo Developer and Full-Stack Developer roles — remote or on-site, in Indonesia or abroad.</p>
+        <h2 class="contact__title reveal">Let's build something<br /><span class="accent">that runs your business.</span></h2>
+        <p class="sub reveal">Open to Odoo Developer and Full-Stack Developer roles: remote or on-site, in Indonesia or abroad.</p>
         <div class="contact__actions reveal">
-          <button class="btn btn--primary magnetic" id="copyEmail" data-email="nzr.rahmad@gmail.com"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> <span id="copyLabel">nzr.rahmad@gmail.com</span></button>
-          <a class="btn btn--ghost magnetic" href="https://www.linkedin.com/in/rahmadalamsyahnazaruddin/" target="_blank" rel="noopener"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg> LinkedIn</a>
-          <a class="btn btn--ghost magnetic" href="https://github.com/Alamnzr123" target="_blank" rel="noopener"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg> GitHub</a>
-          <a class="btn btn--ghost magnetic" href="assets/docs/CV_Rahmad_Alamsyah_Nazaruddin.pdf" target="_blank" rel="noopener"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> CV (PDF)</a>
+          <button class="btn btn--primary" id="copyEmail" type="button" data-email="nzr.rahmad@gmail.com"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> <span id="copyLabel">nzr.rahmad@gmail.com</span></button>
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/rahmadalamsyahnazaruddin/" target="_blank" rel="noopener"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg> LinkedIn<span class="sr-only"> (opens in a new tab)</span></a>
+          <a class="btn btn--ghost" href="https://github.com/Alamnzr123" target="_blank" rel="noopener"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg> GitHub<span class="sr-only"> (opens in a new tab)</span></a>
+          <a class="btn btn--ghost" href="assets/docs/CV_Rahmad_Alamsyah_Nazaruddin.pdf" target="_blank" rel="noopener"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="ic" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> CV (PDF)<span class="sr-only"> (opens in a new tab)</span></a>
         </div>
+        <p class="contact__status" id="copyStatus" role="status" aria-live="polite"></p>
       </div>
     </section>
   </main>
